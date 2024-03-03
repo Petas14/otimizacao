@@ -3,7 +3,7 @@
 # 1. Introdução
 <h3> 
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; De forma geral, o problema tratado terá a seguinte forma: 
+$\hspace{1cm}$ De forma geral, o problema tratado terá a seguinte forma: 
 
 <br>
 <center>
@@ -19,7 +19,7 @@ sujeito a $x$ $ \epsilon$ $ X$
 
 <h3> 
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dado os pontos $(x_1,y_1),(x_2,y_2),...,(x_N,y_N)$ queremos a melhor relação entre y e x que atenda $y  \approx x^T \beta$, em que $\beta$ são os pesos do modelo, que precisam ser encontrados.
+$\hspace{1cm}$ Dado os pontos $(x_1,y_1),(x_2,y_2),...,(x_N,y_N)$ queremos a melhor relação entre y e x que atenda $y  \approx x^T \beta$, em que $\beta$ são os pesos do modelo, que precisam ser encontrados.
 
 Assim, teremos:
 
@@ -35,7 +35,7 @@ sujeito a $\beta$ $ \epsilon$ $ \R$
 o primeiro termo acima o erro médio, e o segundo é a penalização do modelo.
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Há duas maneiras de encontrar os valores dos pesos, a primeira é usando o algoritmo do gradiente descendente e a segunda é o método de Newton,
+$\hspace{1cm}$ Há duas maneiras de encontrar os valores dos pesos, a primeira é usando o algoritmo do gradiente descendente e a segunda é o método de Newton,
 
 
 $\hspace{0.5cm}$ Gradiente descendente $\hspace{2.5cm}$ Newton
@@ -55,7 +55,7 @@ Não apenas isto, mas haveão funções que não possuiram segunda derivadas, e 
 
 <h3>
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dado os pontos $(x_1,y_1),(x_2,y_2),...,(x_N,y_N)$ queremos a melhor relação entre y e x que atenda $y  \approx x^T \beta$, em que $\beta$ são os pesos do modelo, que precisam ser encontrados.
+ $\hspace{1cm}$ Dado os pontos $(x_1,y_1),(x_2,y_2),...,(x_N,y_N)$ queremos a melhor relação entre y e x que atenda $y  \approx x^T \beta$, em que $\beta$ são os pesos do modelo, que precisam ser encontrados.
 
 Assim, teremos:
 
@@ -67,7 +67,7 @@ sujeito a $\beta$ $ \epsilon$ $ \R$
 
 </center>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; o termo de penalidade não possui derivada em zero. Veremos mais a frente como lidar com isto.
+$\hspace{1cm}$ o termo de penalidade não possui derivada em zero. Veremos mais a frente como lidar com isto.
 </h3>
 
 # 2. Básico de Algebra linear e cálculo
@@ -75,12 +75,12 @@ sujeito a $\beta$ $ \epsilon$ $ \R$
 ## 2.1 - Algebra Linear
 <h3>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Supondo um vetor $v$, quando dizemos que tal pertence a $\R^d$, siginifica que $ v=(v_1,v_2,...,v_d)$
+$\hspace{1cm}$ Supondo um vetor $v$, quando dizemos que tal pertence a $\R^d$, siginifica que $ v=(v_1,v_2,...,v_d)$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Supondo dois vetores no espeço bidimensional, u e v, dizemos que {u,v} spam $\R^2$, se é possível escrever um terceiro vetor w qualquer como, $w = \alpha u + \beta v$. É possivel 
+$\hspace{1cm}$ Supondo dois vetores no espeço bidimensional, u e v, dizemos que {u,v} spam $\R^2$, se é possível escrever um terceiro vetor w qualquer como, $w = \alpha u + \beta v$. É possivel 
 generalizar isto para o espaço $\R^k$, em que agora, $w = \sum_i^k \alpha _i v_i$.
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Com isto é possível definir a independencia linear, ou seja, supondo dois vetores u e v, se não existir $\alpha,\beta$ que consiga representar um em função do  outro, dizemos que eles são linearmente independentes. Uma forma matemática de descrever isto é
+ $\hspace{1cm}$ Com isto é possível definir a independencia linear, ou seja, supondo dois vetores u e v, se não existir $\alpha,\beta$ que consiga representar um em função do  outro, dizemos que eles são linearmente independentes. Uma forma matemática de descrever isto é
 
 $\alpha u + \beta v = 0 \rightarrow  u = - (\beta/\alpha)v$
 
@@ -223,3 +223,26 @@ $$
 \end{pmatrix}
 
 $$
+
+</h3>
+
+# 3. Conjuntos convexos
+
+## 3.1 - Definição
+<h3>
+
+$\hspace{1cm}$ É dificil dar uma definição formal sobre conjuntos conveos, porém, visualmente, conjuntos convexos são aqueles nos quais é possível traçar uma reta de um ponto a outro dentro do conjunto, e todos os pontos contidos nesta reta pertecem ao conjunto. 
+
+$\hspace{1cm}$ Isto está ilustrado na figura abaixo.
+
+![GD](/images/convex.png)
+
+$\hspace{1cm}$ matematicamente, seja C um conjunto convexo, se $\forall \ x,y \ \epsilon \ C$, $\forall \ \lambda \ \epsilon \ [0,1]$, então o conjunto C será convex se, $(\lambda x + (1-\lambda)y) \ \epsilon \  C$
+
+
+
+
+
+
+
+
